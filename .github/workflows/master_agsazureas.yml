@@ -27,6 +27,6 @@ jobs:
       uses: azure/webapps-deploy@v1
       with:
         app-name: 'agsazureas'
-        slot-name: 'production'
+        #slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_2da76e98c12342db92549c2277028a1c }}
-        package: '${{ github.workspace }}/target/*.jar'
+        package: target/*.war
